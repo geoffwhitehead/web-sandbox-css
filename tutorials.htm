@@ -1,0 +1,505 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CSS tutorials">
+    <meta name="author" content="geoff whitehead">
+    <link rel="shortcut icon" href="img/smb.jpg">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica%7CPlayball">
+
+    <title>Tutorials</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<!-- NAVBAR
+================================================== -->
+<body>
+    <div class="navbar-wrapper">
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">AcCSS</a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.htm">Home</a></li>
+                        <li class="active"><a href="tutorials.htm">Tutorials</a></li>
+                        <li><a href="sandbox.htm">Sandbox</a></li>
+                        <li><a href="review.htm">Review</a></li>
+                        <li><a href="links.htm">Links</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="list-group" id="tutSidebar">
+                    <li class="list-group-item">
+                        <h4 class="list-group-item-heading">Beginner</h4>
+                        <p class="list-group-item-text">
+                           A <em>small</em> selection of begginer tutorials
+                        </p>
+                        <a href="#t1Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">What is <abbr title="cascading style sheet">CSS</abbr>?</h4>
+                            <p class="list-group-item-text">
+                                ... and why its good to use it.
+                            </p>
+                        </a>
+                        <a href="#t2Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading"><abbr title="cascading style sheet">CSS</abbr> Syntax and examples</h4>
+                            <p class="list-group-item-text">...The format to write <abbr title="cascading style sheet">CSS</abbr></p>
+                        </a>
+                        <a href="#t3Panel" class="list-group-item">
+                            <h4 class=" list-group-item-heading">
+                                Selecting by:
+                            </h4>
+                            <p class="list-group-item-text">...element, ID, or class</p>
+                        </a>
+                        <a href="#t4Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">Inserting <abbr title="cascading style sheet">CSS</abbr></h4>
+                            <p class="list-group-item-text">...adding <abbr title="cascading style sheet">CSS</abbr> externally, internally, and inline</p>
+                        </a>
+                        <a href="#t5Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">Multiple style sheets</h4>
+                            <p class="list-group-item-text">...how multiple style sheets are combined</p>
+                        </a>
+                        <a href="#t6Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">Backgrounds</h4>
+                            <p class="list-group-item-text">...displaying background colours or images</p>
+                        </a>
+                        <a href="#t7Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">Box model</h4>
+                            <p class="list-group-item-text">..the <abbr title="cascading style sheet">CSS</abbr> box model and how to apply borders, margins, and padding</p>
+                        </a>
+                        <a href="#t8Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">Positioning</h4>
+                            <p class="list-group-item-text">...absolute or relative</p>
+                        </a>
+                        <a href="#t9Panel" class="list-group-item">
+                            <h4 class="list-group-item-heading">Combinators</h4>
+                            <p class="list-group-item-text">...descendent, child, or adjacent selector</p>
+                        </a>
+                        <h4 class="list-group-item-heading"><br />Advanced</h4>
+                        <a href="#" class="list-group-item">
+                            <h4 class="list-group-item-heading">Coming soon</h4>
+                            <p class="list-group-item-text">...coming soon</p>
+                        </a>
+                </ul>
+            </div>
+            <div class="col-lg-9" id="tutorials">
+                <div class="panel panel-default" id="t1Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h4>What is <abbr title="cascading style sheet">CSS</abbr></h4></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <abbr title="cascading style sheet">CSS</abbr> was designed to give seperation to style and content. It used to be that all the <abbr title="hyper-text mark-up language">HTML</abbr> and style attributes were contained in one document. Styles such as background color and font were all contained in the seperate elements as an inline style; or contained in <code>style</code> tags in the <code>head</code> of the document.
+                        </p>
+                        <p>
+                            As web pages evolved and different styles in web pages became more prominent, <abbr title="hyper-text mark-up language">HTML</abbr>documents became very cluttered and CSS was invented as a way to remedy this.
+                        </p>
+                        <p><abbr title="cascading style sheet">CSS</abbr> files are linked to <strong>extenerally</strong> in the<abbr title="hyper-text mark-up language">HTML</abbr> documnent like this:</p>
+                        <p><code>link href="css/styles.css" rel="stylesheet"</code></p>
+                        <p>This link is usually contained in the <code>head</code> tags at the top of the <abbr title="hyper-text mark-up language">HTML</abbr> document.</p>
+                        <p>
+                            Another <strong>very important</strong> feature is in how the style applies to the document. As the name suggests styles cascade over the document and are applied in a certain order. This will be explained in more detail later in the tutorial <a href="#t6Panel">here</a> but for now just know that it enables developers to apply multiple styles from multiple documents that overlap each other. For instance, applying <code>color:red</code> to the whole document and then overwriting this with another color where this style differed.
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t2Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h4><abbr title="cascading style sheet">CSS</abbr> Syntax and examples</h4></div>
+                    </div>
+                    <div class="panel-body">
+                        <p><abbr title="cascading style sheet">CSS</abbr> syntax consists of a selector and declaration block. Here is an example of a typical <abbr title="cascading style sheet">CSS</abbr> statement: </p>
+                        <p><code>p : {background-color:green; font: 30px consolas;}</code></p>
+                        <p>This statement consists of the following. A selector which in this case is the <code>p</code> element. This means that all <code>p</code> tags will be selected when applying the following declaration.</p>
+                        <p>The declaration consists of two styles; applying a background color of green and changing the font within the <code>p</code> tags to 12 consolas.</p>
+                        <p>Each seperate declaration can be divided into two categories; a <strong>property</strong> and a <strong>value</strong>. In this case <code>background-color:</code> is the property being applied and <code>"green"</code> is the value.</p>
+                        <p>Notice how each style is seperarated with the ";" operator and also all styles are contained in 1 set of brackets.</p>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t3Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h4>Selecting by: Element, ID, or class</h4></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>There are 3 different ways to select elements in a <abbr title="hyper-text mark-up language">HTML</abbr> document. You can use either an element, class or an ID.</p>
+                        <ul>
+                            <li>An element is a component, like a <code>p</code> element or a <code>div</code> element.</li>
+
+                            <li>
+                                A class is a group of elements that have the same class name. The class name in a <abbr title="hyper-text mark-up language">HTML</abbr> document is written like this:
+                                <ul>
+                                    <li><code>p class=”example”</code></li>
+                                    <li>In <abbr title="cascading style sheet">CSS</abbr> class names are selected with the “.”operator. For instance:</li>
+                                    <li><code>.exampleClass{background-color:green;}</code></li>
+                                </ul>
+                            </li>
+                            <li>
+                                ID’s are a unique identifier for a particular element and are selected with the “#” operator:
+                                <ul>
+                                    <li><code>#example{background-color:green;}</code></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="well well-lg">
+                            <h3>Exercise: Selectors</h3>
+                            <ol>
+                                <li>Open up the sandbox and select the target drop down box. Notice how there are elements with a "#" and a "." prefix. Select the ID selector for a box A and change its background-colour to green</li>
+                                <li>Now select the class selector "." and change their background colour to blue</li>
+                            </ol>
+                        </div>
+                        <h4>Grouping selectors</h4>
+                        <p>When you need to add some <abbr title="cascading style sheet">CSS</abbr> to multiple elements, it's possible to group these into one line of <abbr title="cascading style sheet">CSS</abbr> to keep your code tidy. The operator to do this is ",". For example:</p>
+                        <p><code>p{background-colour:green;}</code> and <code>div{background-color:green;}</code> is equal to:</p>
+                        <p><code>p, div{background-colour:green;}</code></p>
+
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t4Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3>Inserting <abbr title="cascading style sheet">CSS</abbr></h3></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>There are 3 different ways of including <abbr title="cascading style sheet">CSS</abbr> into a document.</p>
+                        <h4>Applying styles externally</h4>
+                        <p>The first and most used way is to include <abbr title="cascading style sheet">CSS</abbr> <em>externally</em>. This is when all <abbr title="cascading style sheet">CSS</abbr> is stored in a separate document that is linked to within the <abbr title="hyper-text mark-up language">HTML</abbr> document. The link is contained in the <code>head</code> of the document in the following format.</p>
+                        <p><code>link href="css/example.css" rel="stylesheet"</code></p>
+                        This will apply <abbr title="cascading style sheet">CSS</abbr> to everything with the page that it is linked to and is the standard for applying styles.<br /><br />
+                        <h4>Applying styles internally</h4>
+                        <p>Another way of applying styles is <em>internally</em>. This is when all the styles are contained in the <code>head</code> of the document nested in style tags like this:</p>
+                        <p><code>&lt;head&gt;<br />&lt;style&gt;<br />      p {background-color:green;}<br />&lt;/style&gt;<br />&lt;/head&gt;</code></p>
+                        <h4>Applying in-line styles</h4>
+                        <p>Finally the last method is to apply <em>inline</em> styles. This is when styles are applied nested in the element itself such as:</p>
+                        <p><code>p class=”example” style=”background-color:green”</code></p>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t5Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3>Multiple style sheets</h3></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>Styles are applied to a document in a very specific order. Say for example we apply an internal style in the <code>head</code> of the document that gives all <code>p</code> elements a background colour of green:</p>
+                        <p><code>&lt;head&gt;<br />&lt;style&gt;<br />p {background-color:green;}<br />&lt;/style&gt;<br />&lt;/head&gt;</code></p>
+                        <p>Then later apply an in-line style to a <code>p</code> element giving it a back-ground color of red.</p>
+                        <p><code>p class=”example” style=”background-color:red”</code></p>
+                        <p>We have now applied 2 different styles to a <code>p</code> element. This is why its important to understand the order in which styles are applied to a <abbr title="hyper-text mark-up language">HTML</abbr> document.</p>
+                        <p>Styles are applied in the following order:</p>
+                        <ol>
+                            <li>Default browser style</li>
+                            <li>External <abbr title="cascading style sheet">CSS</abbr> document are applied next overriding browser defaults</li>
+                            <li>Internal styles are applied next which in turn overwrite any browser defaults or external style sheets</li>
+                            <li>Finally in-line styles are applied last <strong>replacing</strong> all other styles.</li>
+                        </ol>
+                        <p>There is also the possibility of applying multiple external style sheets to one document; and as the name suggests these styles cascade and overwrite the preceding styles as you move down the <abbr title="hyper-text mark-up language">HTML</abbr> document.</p>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t6Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3>Backgrounds</h3></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>Backgrounds can either be an image or a colour. To apply a background colour of green use the following <abbr title="cascading style sheet">CSS</abbr>:</p>
+                        <p><code>#myDiv {background-color: green}</code></p>
+                        <p>To apply a background image to a page use the following <abbr title="cascading style sheet">CSS</abbr>:</p>
+                        <p><code>#myDiv {background-image:url(“example.jpeg”);}</code></p>
+                        <p>Some of the properties of Background include:</p>
+                        <ul>
+                            <li>background-repeat</li>
+                            <li>background-attachment</li>
+                            <li>background-position</li>
+                        </ul>
+
+                        <div class="well well-lg">
+                            <h4>Exercise: Give box C a background image</h4>
+                            <ol>
+                                <li>Open the sandbox and target box C.</li>
+                                <li>Now type background-image into the property box</li>
+                                <li>Finally set the following value <code>url("img/smb.jpg")</code></li>
+                                <li>You can try experimenting with any image you like from the web by inserting the URL</li>
+                            </ol>
+                        </div>
+                        <p>
+                            Repeat is a property used for images. The default is for images that don’t fit the height or width of the page to repeat horizontally and vertically to fill the available space. Not all images are meant for this so you can use either <code>repeat-x</code>or <code>repeat-y</code> to tell the browser to repeat the image in only the horizontal or vertical axis respectively.
+                        </p>
+                        <ul>
+                            <li>background-repeat: repeat – default value, image is repeated horizontally and vertically</li>
+                            <li>background-repeat: repeat-x – image is repeat along the horizontal axis only</li>
+                            <li>background-repeat: repeat-y – image repeated along the vertical axis only</li>
+                            <li>background-repeat: no-repeat – image is not repeated</li>
+                            <li>background-repeat: inherit – repeat property is inherited from parent container</li>
+                            <li>background-repeat: initial – repeat property is set to its default value</li>
+                        </ul>
+                        <p>Another property is the attachment property. Usually when scrolling down a page the background will move as the text does in the foreground. If you want background to remain fixed relative to the viewport then you can select this with the following <abbr title="cascading style sheet">CSS</abbr>:</p>
+                        <p><code>background-attachment:fixed;</code></p>
+
+                        <p>Background Attachment has the following properties that you can set.</p>
+                        <ul>
+                            <li>background-attachment: fixed – the image is fixed relative to the viewport</li>
+                            <li>background-attachment: scroll – the image scrolls with the page</li>
+                            <li>background-attachment: inherit – the property is inherited from its parent container</li>
+                            <li>background-attachment: initial – the attachment property is set to its default value; which in this case is scroll</li>
+                            <li>background-attachment: local – the background scrolls with the elements contents</li>
+                        </ul>
+                        <p>The last property is will tell the browser where to position the image. For example: left center will position the image centrally and aligned to the left. If only one value is givin them center will be defaulted for 2nd value. Example: left = left center.Refer to this table to understand positioning. </p>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>LEFT</th>
+                                    <th>CENTER</th>
+                                    <th>RIGHT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>TOP</th>
+                                    <td>left top</td>
+                                    <td>center top</td>
+                                    <td>right top</td>
+                                </tr>
+                                <tr>
+                                    <th>CENTER</th>
+                                    <td>left center</td>
+                                    <td>center center</td>
+                                    <td>right center</td>
+                                </tr>
+                                <tr>
+                                    <th>BOTTOM</th>
+                                    <td>left bottom</td>
+                                    <td>center bottom</td>
+                                    <td>right bottom</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <br />
+                    </div>
+                </div>
+
+                <div class="panel panel-default" id="t7Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3>Box model</h3></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>The box model refers to the display of elements and the space on screen that they take up. Take an ordinary <code>div</code> element for instance. The space it takes up on the screen is determined by 4 things.</p>
+                        <h4>First: the content</h4>
+                        <p>
+                            The content refers to what is contained in the div and the default size is determined by how much content there is inside it <em>(the default value)</em> or by the height and width properties. You can change the height and width properties like this:
+                        </p>
+                        <p><code>exampleDiv {width:100px; height:200px}</code></p>
+                        <h4>Secondly: the padding</h4>
+                        <p>Padding is the area that surrounds the content. It can be changed like this:</p>
+                        <p><code>exampleDiv {padding:5px}</code></p>
+                        <p>This will change the left, top, bottom, and right padding to 5px.</p>
+                        <h4>Thirdly: the border</h4>
+                        <p> border is applied like this:</p>
+                        <p><code>exampleDiv {border:5px solid}</code></p>
+                        <p><strong>note:</strong> border is actually a shorthand for all the different properties relating to border. Properties must be applied in a certain order when using this. The order is:</p>
+                        <ul>
+                            <li>border-width</li>
+                            <li>border-style</li>
+                            <li>border-colour</li>
+                        </ul>
+                        <p>The border-style is the only required border property. Applying this <abbr title="cascading style sheet">CSS</abbr>:</p>
+                        <p><code>exampleDiv {solid;}</code></p>
+                        <p>
+                            will apply a solid border with the default width and colour. There are many different styles to choose from such as <span style="border-style:dashed;"><code>border-style{dashed;}</code></span> or <span style="border-style:dotted;"><code>border-style{dotted;}</code></span>.<br /><br />
+                        </p>
+
+                        <div class="well well-lg">
+                            <h4>Exercise: Dashed borders</h4>
+                            <ol>
+                                <li>Open the sandbox and target box C.</li>
+                                <li>Try giving box A a dashed border, box B a solid border, and box C a dotted border</li>
+                                <li>Notice how it defaults the border colour and thickness</li>
+                                <li>Try giving Box C a <code>10px dashed blue</code> border</li>
+                                <li>Bear in mind that its only necassary to include the border-style but the properties must be entered in this order</li>
+                            </ol>
+                        </div>
+
+                        <h4>Lastly: the margin</h4>
+                        <p>The last property applied is the margin. This is the area outside that surrounds the border. It is applied like this: </p>
+                        <p><code>exampleDiv {margin: 10px}</code></p>
+
+
+                        <h4>Box-model</h4>
+                        <img class="contentImages" src="img/boxmodel.gif" alt="css box-model" height="400" width="600">
+                        <p class="credits">Image taken from: <a href="http://inserthtml.com/codex/css-guide-box-model/">http://inserthtml.com/codex/css-guide-box-model/</a></p>
+                        <h4>Shorthand rule for properties</h4>
+                        <p>A shorthand exists for all the properties that apply properties or values to the sides of an element. The shorthand for padding is:</p>
+                        <p><code>exampleDiv {padding:5px, 10px, 15px, 20px;}</code></p>
+                        <p>The order in which the padding is applied is clock-wise starting from the top.</p>
+                        <ol>
+                            <li>Top</li>
+                            <li>Right</li>
+                            <li>Bottom</li>
+                            <li>Left</li>
+                        </ol>
+                        <p>This is the same for other properties such as border and margin.</p>
+
+
+                        <div class="well well-lg">
+                            <h4>Exercise: Ordering of property values</h4>
+                            <ol>
+                                <li>Open the sandbox and target box C.</li>
+                                <li>Give box C a solid border</li>
+                                <li>Now try giving it the following border: <code>5px 10px 15px 20px</code></li>
+                                <li>Notice how the border gets thicker in a clockwise order. This is the general rule for values of this type</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t8Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3>Positioning</h3></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <strong>Tip: </strong><em>All the following measurements are made from the top and from the left. Think of this as how pixels are drawn onto a screen from left to right and from top to bottom.</em>
+                        </p>
+                        <h4>Static</h4>
+                        <p>
+                            Static positioning is the default position for all elements. It positions the element relative to the page flow.
+                        </p>
+                        <h4>Fixed</h4>
+                        <p>
+                            Fixed positioning is when an element is given either coordinates, pixel or percentage measurements to determine where the element is displayed <strong>relative to the viewport</strong>. For example:
+                        </p>
+                        <p><code>.exampleClass {position: fixed ; left: 0ox ; top: 0px}</code></p>
+                        <p>
+                            This would position the <code>div</code> in the top left corner of the screen and because the position is fixed, it means that the <code>div</code> would stay at this position whilst scrolling.
+                        </p>
+                        <h4>Relative</h4>
+                        <p>
+                            This would position the element relative to its <strong>original</strong> position in the page flow. Its space in the page flow is still reserved leaving a white space where the element was if moved. You can change an elements relative position like this:
+                        </p>
+                        <p><code>.exampleClass {position: relative; left: 10px ; top: 10px;}</code></p>
+                        <p>
+                            This will move the element 10px <strong>away from the top side </strong>of its original position and 10px<strong> away from the left side</strong>of its original position. In other words, it will shift the element down and right by 10px.
+                        </p>
+                        <h4>Absolute</h4>
+                        <p>
+                            Giving an element absolute positioning and then <strong>moving it</strong> will remove the element from the page flow. Then move it relative to the <strong>first parent container</strong> that has position.
+                        </p>
+                        <p>
+                            You can apply absolute position like this:
+                        </p>
+                        <p><code>.exampleClass {position: absolute; left: 10px ; top: 10px;}</code></p>
+                        <p>Like the other examples this will move the element from the top and the left.</p>
+                        <div class="well well-lg">
+                            <h3>Exercise: Absolute and Fixed</h3>
+                            <ol>
+                                <li>Give one of the boxes fixed positioning and move it outside of the canvas onto a clear area</li>
+                                <li>Next apply absolute position again and move it 0px from the left and top; it should be now aligned with the border of the <abbr title="hyper-text mark-up language">HTML</abbr> document.</li>
+                                <li>Now give the box fixed positioning and move it back inside of the canvas</li>
+                                <li>Give the box absolute position and move it left:0px and top:0px. Notice how it now aligns with the borders of the canvas.</li>
+                            </ol>
+                        </div>
+                        <h4>Overlapping</h4>
+                        <p>
+                            The <code>z-index</code> determines whether elements are drawn on top of or underneath each other. The default value they are given is determined by their order in the document. I.e. The latest element will be drawn on the top.
+                        </p>
+                        <p>You can change an elements <code>z-index</code> like this:</p>
+                        <p><code>.exampleClass {z-index: 10;}</code></p>
+                        <p>This will cause the element to stack on top of any elements that have a value less than 10.</p>
+                        <div class="well well-lg">
+                            <h3>Exercise: Overlapping</h3>
+                            <ol>
+                                <li>First reload the sandbox so the boxes are in their default position; Now try moving all the boxes <code>left:0px</code></li>
+                                <li>Now change the background colour of all the boxes to <strong>the same</strong> colour.<br />Notice how each box is overlapping each other. They're drawn in the order A then B then C. The darker the shade of the box the lower its z-index in relation to the other boxes.</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel panel-default" id="t9Panel">
+                    <div class="panel-heading">
+                        <div class="panel-title"><h3>Combinators</h3></div>
+                    </div>
+                    <div class="panel-body">
+                        <h4>The descendent selector</h4>
+                        <p>This operator is signified by a space between selectors. For instance:</p>
+                        <p><code>div p {background-color: green;}</code>
+                        <p>will select all <code>p</code> elements that are descendants of a <code>div</code> element and give them a green background. This means <code>p</code> elements that are at some point nested inside a <code>div</code>, whether this is immediate or not.</p>
+                        <h4>The child selector</h4>
+                        <p>This operator is signified by a > symbol and is shown in the following example:</p>
+                        <p><code>div > p {background-color: green;}</code></p>
+                        <p>This is very similar to the descendent operator but will only select the <code>p</code> elements immediately after a <code>div</code> element.</p>
+                        <h4>The adjacent selector</h4>
+                        <p>This selector is signified by a + symbol and is shown in the following example: <code>div + p {background-color: green};</code></p>
+                        <p>This will select any <code>p</code> elements that are next to a <code>div</code> element but not necessarily nested inside of one.</p>
+                        <h4>The general selector</h4>
+                        <p>This selector is signified by a ~ symbol and is shown in the following example:</p>
+                        <p> <code>div ~ p {background-color: green};</code></p>
+                        <p> This is very similar to the adjacent selector but will select all <code>p</code> elements that are preceding or come after a <code>div</code> element. Not only the adjacent <code>p</code> elements.</p>
+                        <div class="well well-lg">
+                            <h4>Exercise: Ordering of property values</h4>
+                            <ol>
+                                <li>Open the sandbox and activate free mode. This will enable you to select any target... so be careful</li>
+                                <li>First experiment with the decendent selector. Input the following taget <code>#canvas p</code>  and give them a background color of green. Notice how all text blocks have changed color that are nested inside the grey canvas</li>
+                                <li>Now try the following: <code>#canvas > p {background-color: black;}</code>. Notice how this time only the text in the grey canvas changes colour. This is because it is directly nested inside #canvas</li>
+                                <li>Now try the following: <code>#canvas p + div {background-color white}</code> This will select all div's that are adjacent to a p that are nested inside #canvas. Notice how box A is the only box that changes colour. This is due to its order in the HTML document. Box A is created first </li>
+                                <li>Now try the previous but with the sibling selector: #canvas p ~ div {background-color white}. Notice how now all the boxes change their background colour; not just the box A which is adjacent to the p element</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+
+            <button class="btn btn-default" data-toggle="modal" data-target="#modalAbout">About</button>
+
+            <div class="modal fade" id="modalAbout" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="modalLabel">About</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Website created by Geoff Whitehead <br />
+                                Tutorials and learning environment for <abbr title="cascading style sheet">CSS</abbr><br />
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/customJs.js"></script>
+
+
+</body>
+</html>

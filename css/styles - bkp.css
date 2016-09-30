@@ -1,0 +1,212 @@
+
+
+#banner1:hover {
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s; /* support for Safari and Chrome */
+    -moz-animation: fadein 1s; /* support for Firefox */
+    -o-animation: fadein 1s; /* support for Opera */
+    box-shadow: 13px 13px 10px #888888;
+}
+
+#banner2:hover {
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s; /* support for Safari and Chrome */
+    -moz-animation: fadein 1s; /* support for Firefox */
+    -o-animation: fadein 1s; /* support for Opera */
+    box-shadow: 13px 13px 10px #888888;
+}
+
+#banner3:hover {
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s; /* support for Safari and Chrome */
+    -moz-animation: fadein 1s; /* support for Firefox */
+    -o-animation: fadein 1s; /* support for Opera */
+    box-shadow: 13px 13px 10px #888888;
+}
+
+#banners, #banners div, #banners a {
+    text-align: right;
+    background-size: cover;
+    text-decoration: none;
+}
+
+h3, h4 {
+    font-family: 'Economica', serif;
+    font-size: 20px;
+}
+
+#banners h3 {
+    font-family: 'Economica', serif;
+    font-size: 80px;
+}
+
+#banner2 div {
+    text-align: left;
+}
+
+.navbar-header a {
+    font-family: 'playball',serif;
+    font-size: 40px;
+}
+
+.navbar-wrapper li {
+    font-family: 'Economica',serif;
+    font-size: 20px;
+}
+
+.col-lg-3 li {
+    font-family: 'Economica',serif;
+}
+
+#banners p {
+    font-family: 'Lobster',serif;
+    font-size: 20px;
+}
+
+#banner1 {
+    background-image: url("../img/tut-banner.png");
+}
+
+#banner2 {
+    background-image: url("../img/sand-banner.png");
+}
+
+#banner3 {
+    background-image: url("../img/review-banner.png");
+}
+
+#sandbox {
+    min-width: 750px;
+}
+
+.list-group-item {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+#canvas {
+    height: 500px;
+    background-image: url('../img/graph_paper.png');
+    min-width: 400px;
+    position: relative;
+    font: 14px consolas;
+}
+
+.beginner {
+    font: 30px consolas;
+}
+
+.box {
+    position: absolute;
+    opacity: 0.5;
+}
+
+.page-header {
+    margin-top: 0px;
+}
+
+.panel panel-info {
+    display: inline-block;
+}
+
+.advanced {
+    display: none;
+}
+
+#a {
+    background-color: #ff0000;
+    height: 50px;
+    width: 50px;
+    left: 400px;
+    top: 100px;
+}
+
+#b {
+    background-color: #ff6a00;
+    height: 150px;
+    width: 150px;
+    left: 460px;
+    top: 50px;
+}
+
+#c {
+    background-color: yellow;
+    height: 250px;
+    width: 250px;
+    left: 40px;
+}
+
+#tutSidebar li h4 + p {
+    display: none;
+}
+
+.list-group-item {
+    background-color: #ffd95b;
+}
+
+    .list-group-item a {
+        background-color: #ffffff;
+    }
+
+.credits {
+    font-size: 8px;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1200px) {
+    #tutSidebar li h4 + p {
+        display: block;
+    }
+}
+
+#tutorials .panel-default {
+    display: none;
+}
+
+    #tutorials .panel-default:target {
+        display: block;
+        animation: fadein 1s;
+        -webkit-animation: fadein 1s; /* support for Safari and Chrome */
+        -moz-animation: fadein 1s; /* support for Firefox */
+        -o-animation: fadein 1s; /* support for Opera */
+    }
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* support for Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein { /* support for Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein { /* support for Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
